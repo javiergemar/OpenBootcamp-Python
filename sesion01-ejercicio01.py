@@ -1,4 +1,10 @@
-print("Hola, eres Javier")
-print("Te quedan 10 meses para acabar tu contrato, ¡¡¡ ESPABILA !!!")
-print("Veo que estás en el curso de Python")
-print("Todavía te queda mucho por aprender")
+# Desde la consola de python, debes de imprimir las siguientes cadenas de texto:
+
+# Hola, soy [tu_nombre]
+# Estoy empezando el curso de python
+# Espero aprender mucho
+
+
+print("Hola, soy Javier")
+print("Estoy empezando el curso de python")
+print("Espero aprender mucho")
