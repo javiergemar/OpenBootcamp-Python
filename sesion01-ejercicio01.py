@@ -4,7 +4,6 @@
 # Estoy empezando el curso de python
 # Espero aprender mucho
 
-
 print("Hola, soy Javier")
 print("Estoy empezando el curso de python")
 print("Espero aprender mucho")
