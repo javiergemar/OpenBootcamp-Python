@@ -8,4 +8,3 @@ print('La cadena almacenada ha cambiado, ahora es: ', texto)
 tipoVariable = type(texto)
 tipoVariable = str(tipoVariable)
 print('El tipo de dato es ' + tipoVariable)
-
