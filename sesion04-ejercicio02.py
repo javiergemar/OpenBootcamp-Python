@@ -1,7 +1,9 @@
-# Escribe un programa capaz de mostrar todos los números
-# impares desde un número de inicio y otro final.
+'''
+Escribe un programa capaz de mostrar todos los números
+impares desde un número de inicio y otro final.
 
-# Primero lo vamos a realizar con un if
+Primero lo vamos a realizar con un if
+'''
 
 numInicial = int(input('Introduce el número inicial: '))
 numFinal = int(input('Introduce el número final: '))
