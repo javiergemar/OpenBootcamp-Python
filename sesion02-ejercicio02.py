@@ -1,5 +1,7 @@
-# Modifica la variable del anterior ejercicio en la consola de python
-# y después muestrala por consola para ver la modificación de la variable.
+'''
+Modifica la variable del anterior ejercicio en la consola de python
+y después muestrala por consola para ver la modificación de la variable.
+'''
 
 texto = input('Inserta una cadena de texto: ')
 print('La cadena de texto introducida es: ', texto)
