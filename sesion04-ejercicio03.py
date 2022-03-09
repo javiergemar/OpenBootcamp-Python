@@ -4,3 +4,4 @@ los números del 1 al 100 en orden inverso.
 '''
 
 numeros = list(range(100, 0, -1))
+print(numeros)
