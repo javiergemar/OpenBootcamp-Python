@@ -1,4 +1,5 @@
 texto = 'El resultado de la '           # variable de ámbito global
+textoAlternativo = 'La operación da como resultado: '
 
 def matematicas(a, b):
     def suma(a, b):
@@ -6,11 +7,14 @@ def matematicas(a, b):
     def resta(a, b):
         return a -b
     texto = 'Resultado de'              # la variable local prevalece sobre la variable global
+    global textoAlternativo             # la variable de ámbito global sobrescribe la de ámbito local
     resultadoSuma = suma (a, b)
     print(texto, 'suma es: ', resultadoSuma)
+    print(textoAlternativo, resultadoSuma)
 
     resultadoResta = resta(a, b)
     print(texto, 'resta es: ', resultadoResta)
+    print(textoAlternativo, resultadoResta)
 
     def masoperaciones(a, b):
         def multi(a, b):
