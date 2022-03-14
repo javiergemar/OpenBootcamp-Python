@@ -16,8 +16,8 @@ def matematicas(a = 8, b = 4, c = 2, d = 1):            # le indicamos que los p
     print(texto, 'resta es: ', resultadoResta)
     print(textoAlternativo, resultadoResta)
 
-    def masoperaciones(*args):
-        resultado = =
+    def masoperaciones(a, b):
+
         def multi(a, b):
             return a * b
 
@@ -32,5 +32,20 @@ def matematicas(a = 8, b = 4, c = 2, d = 1):            # le indicamos que los p
 
     masoperaciones(a, b)
 
-
 matematicas()
+
+def habitantes(*args):
+    totalHabitantes = 0
+
+    for arg in args:
+        totalHabitantes += arg
+
+    return totalHabitantes
+
+print(habitantes(1, 3, 5, 7, 9))
+
+def diccionario(**kwargs):
+        for key, value in kwargs.items():
+            print(key, '=', value)
+
+diccionario(coche = 'car', gato = 'cat', perro = 'dog', casa = 'home', rana = 'fog', avion = 'plane')
