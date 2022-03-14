@@ -49,3 +49,36 @@ def diccionario(**kwargs):
             print(key, '=', value)
 
 diccionario(coche = 'car', gato = 'cat', perro = 'dog', casa = 'home', rana = 'fog', avion = 'plane')
+
+print('Diferentes formas de las que podemos acceder al resultado de la función')
+
+def operaciones(a, b):
+    return a + b, a - b, a * b, a / b
+
+resultados = operaciones(2, 4)
+print(resultados)
+print(resultados[0])
+print(resultados[1])
+print(resultados[2])
+print(resultados[3])
+
+suma, resta, multi, divi = operaciones(4, 8)
+print(suma)
+print(resta)
+print(multi)
+print(divi)
+
+opera, _, _, _ = operaciones(8, 16)
+print(opera)
+
+def sumador(**kwargs):
+    inicial = kwargs['inicial']
+    final = kwargs['final']
+
+    resultado = 0
+    for x in range(inicial, final +1):
+        resultado += x
+
+    return resultado
+
+print('El resultado de los valores del 15 al 30 es:', sumador(inicial=15, final=30))
