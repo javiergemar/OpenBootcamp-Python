@@ -1,3 +1,5 @@
+print('* * * * * CÓMO DECLARAR FUNCIONES * * * * *')
+
 texto = 'El resultado de la '                           # variable de ámbito global
 textoAlternativo = 'La operación da como resultado: '
 
@@ -6,8 +8,8 @@ def matematicas(a = 8, b = 4, c = 2, d = 1):            # le indicamos que los p
         return a + b + c +d
     def resta(a, b, c, d):
         return a - b -c -d
-    texto = 'Resultado de'              # la variable local prevalece sobre la variable global
-    global textoAlternativo             # la variable de ámbito global sobrescribe la de ámbito local
+    texto = 'Resultado de'              # la variable LOCAL prevalece sobre la variable GLOBAL
+    global textoAlternativo             # la variable de ÁMBITO GLOBAL sobrescribe la de ÁMBITO LOCAL
     resultadoSuma = suma (a, b, c, d)
     print(texto, 'suma es: ', resultadoSuma)
     print(textoAlternativo, resultadoSuma)
@@ -34,6 +36,8 @@ def matematicas(a = 8, b = 4, c = 2, d = 1):            # le indicamos que los p
 
 matematicas()
 
+print('* * * * * USO DE ARGS * * * * *')
+
 def habitantes(*args):
     totalHabitantes = 0
 
@@ -43,6 +47,8 @@ def habitantes(*args):
     return totalHabitantes
 
 print(habitantes(1, 3, 5, 7, 9))
+
+print('* * * * * USO DE KWARGS * * * * *')
 
 def diccionario(**kwargs):
         for key, value in kwargs.items():
@@ -71,14 +77,36 @@ print(divi)
 opera, _, _, _ = operaciones(8, 16)
 print(opera)
 
+print('* * * * * OPERADORES TERNARIOS * * * * *')
+
 def sumador(**kwargs):
-    inicial = kwargs['inicial']
-    final = kwargs['final']
+    primerNumero = kwargs['claveInicial'] if 'claveInicial' in kwargs else 0
+    ultimoNumero = kwargs['claveFinal'] if 'claveFinal' in kwargs else primerNumero
 
     resultado = 0
-    for x in range(inicial, final +1):
+    for x in range(primerNumero, ultimoNumero +1):
         resultado += x
 
     return resultado
 
-print('El resultado de los valores del 15 al 30 es:', sumador(inicial=15, final=30))
+print('El resultado de sumar los valores es :', sumador(claveFinal=50))
+
+
+print('* * * * * FUNCIONES LAMBDA (o anónimas) * * * * *')
+
+anonima = lambda: print('hola')
+anonima()
+
+anonima = lambda parametro: print('hola', parametro)
+anonima('Javier')
+
+anonima = lambda parametro1, parametro2: print('hola', parametro1, 'adios', parametro2)
+anonima('Javier', 'Javi')
+
+funcionSuma = lambda parametro: parametro + parametro
+print(funcionSuma(5))
+
+def funcionSuma(parametro):
+	return parametro + parametro
+
+print(funcionSuma(5))
