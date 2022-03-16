@@ -8,7 +8,7 @@ Primero lo vamos a realizar con un if
 numInicial = int(input('Introduce el número inicial: '))
 numFinal = int(input('Introduce el número final: '))
 
-for i in range(numInicial,numFinal):
+for i in range(numInicial, numFinal):
     if i % 2 == 0:
         print(i, 'es un número par')
     else:
