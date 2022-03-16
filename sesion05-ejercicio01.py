@@ -4,7 +4,7 @@ la altura y la base como parámetros y otra función que calcule el
 área de un círculo recibiendo el radio del mismo.
 '''
 
-import math                 # importamos la librería math para utilizar mat.pi y obtener el valor de pi
+import math
 
 def calculaAreaTriangulo(baseTriangulo, alturaTriangulo):
     areaTriangulo = (baseTriangulo * alturaTriangulo) / 2
