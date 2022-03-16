@@ -18,9 +18,13 @@ print('* * * * * VAMOS A CALCULAR EL ÁREA DE UN TRIÁNGULO * * * * *')
 
 baseTriangulo = float(input('Introduce la base del triángulo: '))
 alturaTriangulo = float(input('Introduce la altura del triángulo: '))
-print('El área de tu triángulo es:', calculaAreaTriangulo(baseTriangulo, alturaTriangulo))
+
+areaTriangulo = calculaAreaTriangulo(baseTriangulo, alturaTriangulo)
+print('El área de tu triángulo es:', areaTriangulo)
 
 print('* * * * * VAMOS A CALCULAR EL ÁREA DE UN CÍRCULO * * * * *')
 
 radio = float(input('Introduce área del círculo: '))
+
+areaCirculo = calculaAreaCirculo(radio)
 print('El área del círculo es:', calculaAreaCirculo(radio))
