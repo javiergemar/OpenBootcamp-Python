@@ -2,6 +2,7 @@ print('* * * * * CLASES Y MÉTODOS ABSTRACTOS * * * * *')
 
 from abc import ABC, abstractmethod
 
+
 class Animal(ABC):
     @abstractmethod
     def sonido(self):   # Como el sonido de cada animal es diferente,
@@ -10,6 +11,7 @@ class Animal(ABC):
     def diHola(self):
         print('Hola')
 
+        
 class Perro(Animal):
     def sonido(self):   # Definimos el código para el método sonido()
         print('Guau')   # de la clase Perro() derivada de Animal()
