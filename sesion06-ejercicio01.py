@@ -25,6 +25,6 @@ class Coche(Vehiculo):
 
 
 c = Coche()
-print(c.velocidad)
-print(c.puertas)
-type(c)
+print('El coche va a', c.velocidad, 'km/h')
+print('El coche tiene', c.puertas, 'puertas')
+print('El coche tiene', c.ruedas, 'ruedas')
