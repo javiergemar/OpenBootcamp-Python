@@ -1,5 +1,4 @@
 print('* * * * * CLASES Y MÉTODOS ABSTRACTOS * * * * *')
-
 from abc import ABC, abstractmethod
 
 
