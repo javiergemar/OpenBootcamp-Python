@@ -89,6 +89,7 @@ class Productos:
     TipoDeProducto = 0
     CIFProveedor = Proveedores()
 
+    
 p = Productos()
 p.CIFProveedor.nombre                       # Accedemos a nombre de Proveedores()
 p.CategoriaProducto.idcategoria             # Accedemos a idcategoría de Categorias()
