@@ -1,11 +1,14 @@
+print('* * * * * SESIÓN 5 * * * * *')
 print('* * * * * CÓMO DECLARAR FUNCIONES * * * * *')
 
 texto = 'El resultado de la '                           # variable de ámbito global
 textoAlternativo = 'La operación da como resultado: '
 
+
 def matematicas(a = 8, b = 4, c = 2, d = 1):            # le indicamos que los parámetros sean opcionales
     def suma(a, b, c, d):
         return a + b + c +d
+
     def resta(a, b, c, d):
         return a - b -c -d
     texto = 'Resultado de'              # la variable LOCAL prevalece sobre la variable GLOBAL
@@ -34,9 +37,11 @@ def matematicas(a = 8, b = 4, c = 2, d = 1):            # le indicamos que los p
 
     masoperaciones(a, b)
 
+
 matematicas()
 
 print('* * * * * USO DE ARGS * * * * *')
+
 
 def habitantes(*args):
     totalHabitantes = 0
@@ -46,20 +51,25 @@ def habitantes(*args):
 
     return totalHabitantes
 
+
 print(habitantes(1, 3, 5, 7, 9))
 
 print('* * * * * USO DE KWARGS * * * * *')
+
 
 def diccionario(**kwargs):
         for key, value in kwargs.items():
             print(key, '=', value)
 
+
 diccionario(coche = 'car', gato = 'cat', perro = 'dog', casa = 'home', rana = 'fog', avion = 'plane')
 
 print('Diferentes formas de las que podemos acceder al resultado de la función')
 
+
 def operaciones(a, b):
     return a + b, a - b, a * b, a / b
+
 
 resultados = operaciones(2, 4)
 print(resultados)
@@ -79,6 +89,7 @@ print(opera)
 
 print('* * * * * OPERADORES TERNARIOS * * * * *')
 
+
 def sumador(**kwargs):
     primerNumero = kwargs['claveInicial'] if 'claveInicial' in kwargs else 0
     ultimoNumero = kwargs['claveFinal'] if 'claveFinal' in kwargs else primerNumero
@@ -88,6 +99,7 @@ def sumador(**kwargs):
         resultado += x
 
     return resultado
+
 
 print('El resultado de sumar los valores es :', sumador(claveFinal=50))
 
@@ -106,7 +118,9 @@ anonima('Javier', 'Javi')
 funcionSuma = lambda parametro: parametro + parametro
 print(funcionSuma(5))
 
+
 def funcionSuma(parametro):
-	return parametro + parametro
+    return parametro + parametro
+
 
 print(funcionSuma(5))
