@@ -6,13 +6,16 @@ la altura y la base como parámetros y otra función que calcule el
 
 import math
 
+
 def calculaAreaTriangulo(baseTriangulo, alturaTriangulo):
     areaTriangulo = (baseTriangulo * alturaTriangulo) / 2
     return areaTriangulo
 
+
 def calculaAreaCirculo(radio):
     areaCirculo = (radio * math.pi)**2
     return areaCirculo
+
 
 print('* * * * * VAMOS A CALCULAR EL ÁREA DE UN TRIÁNGULO * * * * *')
 
