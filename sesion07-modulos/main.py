@@ -30,6 +30,7 @@ def main():
     print('El módulo se llama:', o.como_me_llamo())     # Llamamos a la variable __name__
 
     op = o.Operador()
+
     print('Resultado del método multiplicacion():', op.multiplicacion(3, 5))
 
     print('La variable PI vale:', o.PI)

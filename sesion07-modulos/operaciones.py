@@ -19,8 +19,7 @@ class Operador:             # También podemos tener clases en los módulos
 
 
 '''
-IMPORTANTE:
-
+IMPORTANTE
 Debemos evitar el código que sigue a continuación, es decir,
 el código de ámbito global fuera de las funciones. Esto es 
 una mala práctica.
