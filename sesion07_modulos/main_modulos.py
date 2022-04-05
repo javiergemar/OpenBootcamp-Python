@@ -7,6 +7,11 @@ Importamos math que es un módulo de Python.
 import operaciones as o                     # Importamos el módulo operaciones
 import math                                 # Importamos el módulo de matemáticas math
 import sys                                  # Importamos el módulo sys para modificar la variable path
+'''
+Añadimos a sys.path la ruta de nuestros módulos antes de cargr el módulo que se encuentra
+en otra ruta
+'''
+sys.path.append('/home/javier/OpenBootcamp/OpenBootcamp-MisModulos')
 import pprint                               # Importamos el módulo pprint para imprimir de forma bonita
 
 
@@ -17,12 +22,6 @@ def main():
     sum = o.suma(2, 2)                      # Invocamos al módulo y luego a la función
     res = o.resta(6, 1)
 
-    pprint.pprint(sys.path)
-    '''
-    Añadimos a sys.path la ruta de nuestros módulos antes de cargr el módulo que se encuentra
-    en otra ruta
-    '''
-    sys.path.append('/home/javier/OpenBootcamp/OpenBootcamp-MisModulos')
     pprint.pprint(sys.path)
 
     print('Hola en main(),', 'Variable sum:', sum, 'Variable res:', res)
