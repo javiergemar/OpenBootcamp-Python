@@ -31,7 +31,6 @@ g = Gato()
 g.sonido()
 g.diHola()
 
-
 print('* * * * * COMPOSICIÓN * * * * *')
 
 
@@ -66,7 +65,6 @@ print('Motor es', c.motor.tipo)
 print('Ventanas', c.carroceria.ventanas.cantidad)
 c.carroceria.ventanas.cambiarCantidad(3)    # El parámetro de la función cambiarCantidad() cambia
 print(c.carroceria.ventanas.cantidad)       # el valor de la variable cantidad de la clase Ventanas
-
 
 print('* * * * * EJERCICIO DE COMPOSICIÓN * * * * *')
 
