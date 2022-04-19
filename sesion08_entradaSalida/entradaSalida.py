@@ -48,4 +48,9 @@ def suma(a, b):
 
 print(f'El número es {suma(numero, numero)} y el texto es {texto.upper()} y tiene {otromas}')
 
+def funcionSuma(a, b):
+    return a + b
 
+# También podemos almacenar en una variable el texto y luego pasarla por print()
+txt = (f'El número es {funcionSuma(numero, numero)} y el texto es {texto.upper()} y tiene {otromas}')
+print(txt)
