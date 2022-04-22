@@ -14,7 +14,8 @@ print(cadenaUno.upper())                                    # Convierte a mayús
 print(cadenaUno.lower().count('a'))                         # Convertimos a minúsculas y luego contamos las 'a'
 '''
 Esta línea sería igual que:
-otracadena = cadena.lower()
+
+otracadena = cadenaUno.lower()
 print(otracadena.count('a'))
 '''
 
