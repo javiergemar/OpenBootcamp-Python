@@ -142,3 +142,45 @@ cada primer elemento (es decir, la posición 0) de la lista partes.
 
 Y return nos devolverá los datos almacenados en la lista resultado. 
 '''
+
+print('\n* * * * * Escribir ficheros * * * * *\n')
+
+f = open('mifichero.txt', 'w')                  # El permiso 'w' sobrescribe lo que haya escrito
+f.write('datos1\n')
+f.write('datos2\n')
+f.close()
+
+f = open('mifichero.txt', 'a')                  # El permiso 'a' añade a lo que haya escrito
+f.write('datos1\n')
+f.write('datos2\n')
+f.close()
+
+f = open('mifichero.txt', 'w')
+lista = [
+    'una liena\n',
+    'dos lineas\n',
+    'tres lineas\n'
+]
+f.writelines(lista)                             # Con el método writelines() tenemos que pasar una lista
+f.close()
+
+print('\n* * * * * Creamos una función que al pasarle una lista machaque y escriba un fichero * * * * *\n')
+
+lista = [                                       # Definimos la lista
+    'una linea',
+    'dos lineas',
+    'tres lineas'
+]
+
+def escribe(fichero, datos):                    # La función requiere dos parámetros, nombre fichero y lista
+    f = open(fichero, 'w')
+
+    for linea in datos:                         # Por cada línea de la lista
+        if not linea.endswith('\n'):            # Si no termina con \n
+            linea += '\n'                       # linea es igual a linea más un salto de línea
+        f.write(linea)                          # Escribimos el valor de linea en el fichero
+
+    f.close()
+
+escribe('mifichero2.txt', lista)                # Invocamos a la función con sus dos parámetros
+
