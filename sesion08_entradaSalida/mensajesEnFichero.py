@@ -183,4 +183,3 @@ def escribe(fichero, datos):                    # La función requiere dos pará
     f.close()
 
 escribe('mifichero2.txt', lista)                # Invocamos a la función con sus dos parámetros
-
