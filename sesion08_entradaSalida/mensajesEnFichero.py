@@ -145,17 +145,17 @@ Y return nos devolverá los datos almacenados en la lista resultado.
 
 print('\n* * * * * Escribir ficheros * * * * *\n')
 
-f = open('mifichero.txt', 'w')                  # El permiso 'w' sobrescribe lo que haya escrito
+f = open('mensajesEnFichero.txt', 'w')                  # El permiso 'w' sobrescribe lo que haya escrito
 f.write('datos1\n')
 f.write('datos2\n')
 f.close()
 
-f = open('mifichero.txt', 'a')                  # El permiso 'a' añade a lo que haya escrito
+f = open('mensajesEnFichero.txt', 'a')                  # El permiso 'a' añade a lo que haya escrito
 f.write('datos1\n')
 f.write('datos2\n')
 f.close()
 
-f = open('mifichero.txt', 'w')
+f = open('mensajesEnFichero.txt', 'w')
 lista = [
     'una liena\n',
     'dos lineas\n',
@@ -182,4 +182,4 @@ def escribe(fichero, datos):                    # La función requiere dos pará
 
     f.close()
 
-escribe('mifichero2.txt', lista)                # Invocamos a la función con sus dos parámetros
+escribe('mensajesEnFichero2.txt', lista)                # Invocamos a la función con sus dos parámetros
