@@ -1,5 +1,5 @@
 # OpenBootcamp-Python
-Curso de Python desde cero.
+Curso de Python.
 
 ## Temario:
 1. INTRODUCCIÓN A PYTHON  
