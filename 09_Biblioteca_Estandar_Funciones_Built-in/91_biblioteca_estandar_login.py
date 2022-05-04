@@ -1,0 +1,2 @@
+print('* * * * * Ficheros de registro * * * * *')
+
