@@ -25,5 +25,6 @@ while True:             # Podríamos hacerlo con un bucle
     pass
 
 '''
-time.sleep(1)           # Otra forma de hacerlo dándole un segundo
+while True:
+    time.sleep(0.1)     # Otra forma de hacerlo que carga menos el procesador.
 '''
